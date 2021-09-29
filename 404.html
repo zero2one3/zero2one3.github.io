@@ -2,8 +2,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+
+        .blod {
+            font-weight: bold;
+            color: black;
+        }
+
+        .link {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .link:hover {
+            color: rgb(39, 39, 209);
+        }
+    </style>
 </head>
 <body>
-<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://www.ly554.com/" homePageName="回到我的主页"></script>
+    <div class="title">
+        不要乱点哦！赶紧回去看 👉<span class="blod link" onclick="back()">  零一的面试宝典  </span>
+    </div>
+    
+    <script>
+        function back () {
+            history.go(-1)
+        }
+    </script>
 </body>
 </html>
